@@ -8,5 +8,4 @@ exec gunicorn async.wsgi:application \
     --worker-class=gevent \
     --worker-connections=1000 \
     --bind 0.0.0.0:8000 \
-    --workers 1 \
-    --timeout 30
+    --workers 1
